@@ -35,11 +35,7 @@ class PostsController < ApplicationController
      @post.destroy
      redirect_to posts_path, :notice => "Your post has been Deleted"
   end
-  private
 
-def p_params
- params.require(:post).permit(:title, :content)
-end
 end
 
 
