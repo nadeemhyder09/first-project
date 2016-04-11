@@ -9,6 +9,7 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
   end
+  # I added a new branch and check if its works ???
   def create
     @post = Post.new(p_params)
 
